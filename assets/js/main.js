@@ -144,7 +144,7 @@
       show(
         "ok",
         "<strong>" + esc(p) + " link detected.</strong> Online downloads aren’t available on this website yet. Get the Social Save Android app to save this media." +
-          (badge ? '<div class="notice-actions"><a class="play-badge" href="' + esc(badge) + '"><img src="' + esc(form.getAttribute("data-badge-img")) + '" alt="Get it on Google Play" width="162" height="48"></a></div>' : "")
+          (badge ? '<div class="notice-actions"><a class="play-badge" href="' + esc(badge) + '"><img src="' + esc(form.getAttribute("data-badge-img")) + '" alt="Get it on Google Play" width="124" height="48"></a></div>' : "")
       );
       return true;
     }
