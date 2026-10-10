@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f5f0" />
+  <meta name="description" content="Save videos, Reels, Shorts and photos with Social Save. A simple place for supported online media and free stock resources." />
+  <title>Social Save — Save. Anything. Anywhere.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span><span>NEW — SOCIAL SAVE FOR ANDROID IS LIVE</span><a href="#android" aria-label="Learn about Android app">Explore app <span>↗</span></a></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Social Save home">
+      <span class="brand-mark">S<span>S</span></span>
+      <span class="brand-copy"><strong>SOCIAL SAVE</strong><small>ALL IN ONE DOWNLOADER</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#social-media">Social Media <span>↗</span></a>
+      <a href="#stock-media">Stock Media <span>↗</span></a>
+      <a href="#journal">Journal <span>↗</span></a>
+      <a href="#about">About <span>↗</span></a>
+    </nav>
+    <a class="nav-cta" href="#download-tool">Use Social Save <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main>
+    <section class="hero page-grid" id="home">
+      <div class="hero-meta mono"><span>MEDIA TOOLKIT</span><span>V01 / 2026</span></div>
+      <div class="hero-main">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR MEDIA, YOUR WAY</div>
+        <h1>Save.<br><em>Anything.</em><br><span class="muted-title">Anywhere.</span></h1>
+        <div class="hero-bottom">
+          <p>Save videos, Reels, Shorts and photos with Social Save. A simple way to keep the media you need, wherever you are.</p>
+          <a href="#download-tool" class="round-arrow" aria-label="Start saving media">↘</a>
+        </div>
+        <div class="hero-actions"><a class="button button-dark" href="#download-tool">Use Social Save Online <span>↗</span></a><a class="button button-outline" href="#android">Get the Android app <span>↗</span></a></div>
+        <div class="trustline"><span>✓ FREE TO USE</span><span>✓ NO SIGN-UP</span><span>✓ NO WATERMARK ADDED</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract media preview">
+        <div class="visual-top mono"><span>SS / MEDIA ARCHIVE</span><span>01—05</span></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="visual-card card-back"><span class="card-label mono">01 / VIDEO</span><div class="shape-play">▶</div><span class="card-foot mono">KEEP WHAT MOVES YOU</span></div>
+        <div class="visual-card card-front"><div class="card-index mono">SOCIAL / 001</div><div class="abstract-photo"><div class="sun"></div><div class="mountain mountain-a"></div><div class="mountain mountain-b"></div><div class="horizon"></div></div><div class="card-info"><span>Save moments.</span><span class="mini-arrow">↗</span></div></div>
+        <div class="floating-stamp"><span class="stamp-star">✳</span><span>MADE TO<br>SAVE TIME</span></div>
+        <div class="visual-caption mono"><span>PUBLIC MEDIA LINKS</span><span>FAST / SIMPLE / USEFUL</span></div>
+      </div>
+      <div class="hero-edge mono"><span>01 — SOCIAL SAVE</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="platform-strip" aria-label="Supported types"><span class="mono strip-label">TOOLS FOR THE THINGS YOU SHARE</span><div class="platform-list"><span><b class="platform-icon instagram">◎</b> Instagram</span><span><b class="platform-icon facebook">f</b> Facebook</span><span><b class="platform-icon tiktok">♪</b> TikTok</span><span><b class="platform-icon youtube">▶</b> YouTube</span><span><b class="platform-icon photo">▧</b> Photos</span></div></section>
+
+    <section class="tool-section section-pad" id="download-tool">
+      <div class="section-kicker mono"><span>02 / START HERE</span><span>ONE LINK. ONE SIMPLE FLOW.</span></div>
+      <div class="section-heading-row"><h2>Bring the link.<br><em>We’ll take it from here.</em></h2><p>Paste a public media link to get started. Download availability depends on the source platform and the processing service configured for this project.</p></div>
+      <div class="download-panel">
+        <div class="panel-top"><div><span class="panel-number mono">SS / 001</span><h3>Social media downloader</h3></div><span class="panel-status"><i></i> READY FOR YOUR LINK</span></div>
+        <form id="downloadForm" class="download-form">
+          <label class="sr-only" for="mediaUrl">Paste your media URL</label>
+          <span class="url-icon">↗</span><input id="mediaUrl" type="url" placeholder="Paste video, Reel, Short or photo URL here…" autocomplete="url" required />
+          <button class="button button-dark" type="submit">Find media <span>→</span></button>
+        </form>
+        <div id="formMessage" class="form-message" role="status" aria-live="polite">Supports public links from popular social platforms. Private or restricted content won’t work.</div>
+        <div class="quick-platforms"><button type="button" data-platform="Instagram">◎ Instagram</button><button type="button" data-platform="Facebook">f Facebook</button><button type="button" data-platform="TikTok">♪ TikTok</button><button type="button" data-platform="YouTube">▶ YouTube</button><button type="button" data-platform="Other">↗ Other link</button></div>
+      </div>
+      <div class="tool-grid" id="social-media">
+        <a class="tool-card" href="#download-tool" data-fill="Instagram"><span class="tool-icon">◎</span><span class="tool-count mono">TOOL / 01</span><h3>Instagram Reels</h3><p>Save supported public Reels and video links for offline viewing.</p><span class="card-link">Open tool <b>↗</b></span></a>
+        <a class="tool-card" href="#download-tool" data-fill="Facebook"><span class="tool-icon">f</span><span class="tool-count mono">TOOL / 02</span><h3>Facebook Videos</h3><p>A simple entry point for supported Facebook videos and Reels.</p><span class="card-link">Open tool <b>↗</b></span></a>
+        <a class="tool-card" href="#download-tool" data-fill="TikTok"><span class="tool-icon">♪</span><span class="tool-count mono">TOOL / 03</span><h3>TikTok Videos</h3><p>Process public TikTok links when supported by the configured service.</p><span class="card-link">Open tool <b>↗</b></span></a>
+        <a class="tool-card" href="#download-tool" data-fill="YouTube"><span class="tool-icon">▶</span><span class="tool-count mono">TOOL / 04</span><h3>YouTube & Shorts</h3><p>Bring a video or Shorts link into your media workflow.</p><span class="card-link">Open tool <b>↗</b></span></a>
+      </div>
+    </section>
+
+    <section class="stock-section section-pad" id="stock-media">
+      <div class="section-kicker mono"><span>03 / STOCK MEDIA</span><span>FIND YOUR NEXT CREATIVE SPARK</span></div>
+      <div class="stock-layout">
+        <div class="stock-copy"><span class="eyebrow">MORE THAN SOCIAL</span><h2>Good ideas<br>need <em>good素材.</em></h2><p>Explore free stock media resources for creative projects, moodboards and everyday inspiration. Always check the original licence before using an asset.</p><a class="button button-light" href="#stock-tools">Explore stock tools <span>↘</span></a><div class="stock-note mono">CURATED FOR YOUR CREATIVE FLOW / 03</div></div>
+        <div class="stock-art">
+          <div class="stock-image stock-image-main"><div class="stock-sky"></div><div class="stock-sun"></div><div class="stock-hill h1"></div><div class="stock-hill h2"></div><span class="stock-image-caption mono">STOCK / LANDSCAPE 001</span></div>
+          <div class="stock-image stock-image-small"><div class="small-art-shape"></div><span class="mono">PHOTO / FORM STUDY</span></div>
+          <span class="stock-sticker">FREE<br>TO EXPLORE</span>
+        </div>
+      </div>
+      <div class="stock-tools" id="stock-tools">
+        <a href="#download-tool" class="stock-tool"><span class="stock-tool-symbol">▧</span><span><b>Free stock photos</b><small>Images for visual ideas and projects</small></span><span class="stock-arrow">↗</span></a>
+        <a href="#download-tool" class="stock-tool"><span class="stock-tool-symbol">▷</span><span><b>Free stock videos</b><small>Motion assets and video inspiration</small></span><span class="stock-arrow">↗</span></a>
+        <a href="#download-tool" class="stock-tool"><span class="stock-tool-symbol">✳</span><span><b>Stock media hub</b><small>Explore supported media resources</small></span><span class="stock-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="how-section section-pad" id="about">
+      <div class="section-kicker mono"><span>04 / HOW IT WORKS</span><span>LESS FRICTION, MORE FLOW</span></div>
+      <div class="section-heading-row"><h2>Three steps.<br><em>Nothing extra.</em></h2><p>Built around a straightforward flow so you can get from a public link to an available media option without unnecessary settings.</p></div>
+      <div class="steps">
+        <article class="step"><div class="step-head"><span class="step-no mono">01</span><span class="step-glyph">↗</span></div><h3>Copy a link</h3><p>Open a public post or video and copy its share link from the original platform.</p></article>
+        <article class="step"><div class="step-head"><span class="step-no mono">02</span><span class="step-glyph">⌁</span></div><h3>Paste it here</h3><p>Paste the URL into Social Save. The processing result depends on your backend integration.</p></article>
+        <article class="step"><div class="step-head"><span class="step-no mono">03</span><span class="step-glyph">↓</span></div><h3>Save your media</h3><p>When a supported download option is returned, choose it and save the file to your device.</p></article>
+      </div>
+    </section>
+
+    <section class="android-section section-pad" id="android">
+      <div class="android-pattern"></div><div class="android-content"><div class="android-label mono"><span>05 / TAKE IT WITH YOU</span><span>ANDROID APP</span></div><h2>Social Save.<br><em>On your phone.</em></h2><p>Your favorite media tools, one tap away. The Android app call-to-action can be linked to the official Play Store listing when the final URL is configured.</p><a class="button button-light" href="#download-tool" id="androidLink">Discover Social Save <span>↗</span></a></div><div class="phone-mock" aria-hidden="true"><div class="phone-frame"><div class="phone-camera"></div><div class="phone-screen"><div class="phone-head"><span class="brand-mark">S<span>S</span></span><span class="phone-menu">•••</span></div><p class="phone-small mono">WELCOME TO</p><h3>Social<br>Save<span>.</span></h3><div class="phone-preview"><div class="phone-preview-sun"></div><div class="phone-preview-hill"></div><span>MEDIA / 001</span></div><div class="phone-action">Paste a link <b>↗</b></div><div class="phone-app-nav"><span>⌂</span><span>▧</span><span>◷</span></div></div></div></div>
+    </section>
+
+    <section class="faq-section section-pad">
+      <div class="section-kicker mono"><span>06 / GOOD TO KNOW</span><span>COMMON QUESTIONS</span></div>
+      <div class="faq-layout"><h2>Before you<br><em>save.</em></h2><div class="faq-list">
+        <details><summary>Is Social Save free to use? <span>＋</span></summary><p>This interface is designed around a free, no-sign-up workflow. Hosting and third-party processing costs may apply to the service operator.</p></details>
+        <details><summary>Can I download any link? <span>＋</span></summary><p>No. Only supported, publicly accessible content may work. Private, restricted, deleted, DRM-protected or unsupported media may not be available.</p></details>
+        <details><summary>Will a downloader backend work automatically? <span>＋</span></summary><p>No. This repository's front end needs a compatible API endpoint to fetch media information and return safe download URLs. The interface will show a clear message until one is configured.</p></details>
+        <details><summary>Can I reuse downloaded content? <span>＋</span></summary><p>You are responsible for checking copyright, licences, creator permissions and the source platform's rules before downloading or reusing media.</p></details>
+      </div></div>
+    </section>
+
+    <section class="journal-section section-pad" id="journal">
+      <div class="section-kicker mono"><span>07 / THE JOURNAL</span><span>NOTES FOR THE MEDIA CURIOUS</span></div>
+      <div class="journal-heading"><h2>Keep a little<br><em>inspiration.</em></h2><p>Small guides for making more of the media you find online.</p></div>
+      <div class="journal-cards"><article class="journal-card"><div class="journal-art journal-art-a"><span class="journal-art-number mono">FIELD NOTE / 01</span><span class="journal-art-glyph">↗</span></div><span class="journal-category mono">HOW TO</span><h3>How to save public media links responsibly</h3><p>A few checks to make before saving or reusing content from the web.</p></article><article class="journal-card"><div class="journal-art journal-art-b"><span class="journal-art-number mono">FIELD NOTE / 02</span><span class="journal-art-glyph">▧</span></div><span class="journal-category mono">CREATIVE WORKFLOW</span><h3>Build a useful visual reference library</h3><p>Simple habits for keeping ideas, references and inspiration in one place.</p></article><article class="journal-card"><div class="journal-art journal-art-c"><span class="journal-art-number mono">FIELD NOTE / 03</span><span class="journal-art-glyph">✳</span></div><span class="journal-category mono">STOCK MEDIA</span><h3>Check the licence before you publish</h3><p>Understand why a free download does not always mean unrestricted use.</p></article></div>
+    </section>
+
+    <section class="closing-cta"><span class="mono">READY WHEN YOU ARE / 08</span><h2>Find it.<br><em>Save it.</em></h2><a href="#download-tool" class="closing-button">Start with a link <span>↗</span></a><div class="closing-star">✳</div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">S<span>S</span></span><span class="brand-copy"><strong>SOCIAL SAVE</strong><small>ALL IN ONE DOWNLOADER</small></span></a><p>A simple place to save videos, Reels and Shorts, photos and free stock media from the web.</p></div><div class="footer-column"><span class="mono">TOOLS</span><a href="#social-media">Social media downloader</a><a href="#social-media">Instagram Reel downloader</a><a href="#social-media">Facebook video downloader</a><a href="#social-media">TikTok video downloader</a><a href="#social-media">YouTube Shorts downloader</a></div><div class="footer-column"><span class="mono">STOCK MEDIA</span><a href="#stock-tools">Stock media downloader</a><a href="#stock-tools">Free stock photos</a><a href="#stock-tools">Free stock videos</a></div><div class="footer-column"><span class="mono">COMPANY</span><a href="#journal">Journal</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a></div></div>
+    <div class="footer-bottom" id="contact"><span>© <span id="year"></span> SOCIAL SAVE. ALL RIGHTS RESERVED.</span><span>DOWNLOAD RESPONSIBLY. RESPECT CREATORS.</span><a href="#home">BACK TO TOP ↑</a></div>
+    <div class="footer-hidden-links" id="privacy" aria-hidden="true"></div><div class="footer-hidden-links" id="terms" aria-hidden="true"></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
